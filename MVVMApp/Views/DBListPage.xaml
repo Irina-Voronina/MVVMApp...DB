@@ -12,6 +12,7 @@
                                  StartPoint="0,0"
                                  EndPoint="1,1"
                                  GradientStops="{StaticResource myGradientStops}" />
+            
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout Background="{StaticResource myGradientBrush}">
