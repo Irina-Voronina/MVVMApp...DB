@@ -9,6 +9,7 @@
         <Entry Text="{Binding Email}"/>
         <Label Text="Телефон"/>
         <Entry Text="{Binding Phone}"/>
+        
 
         <Button Text="SMS" Command="{Binding SendSmsCommand}"  />
         <Button Text="Email" Command="{Binding SendEmailCommand}"/>

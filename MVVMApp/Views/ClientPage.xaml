@@ -17,6 +17,7 @@
             <Entry Text="{Binding Email}" FontSize="Small" />
             <Label Text="Телефон" />
             <Entry Text="{Binding Phone}" FontSize="Small" />
+            
 
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">

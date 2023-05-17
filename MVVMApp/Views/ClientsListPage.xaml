@@ -17,6 +17,7 @@
                 WidthRequest="200"
                 HeightRequest="200"
                 Margin="0,20,0,0"/>
+        
 
         <ListView x:Name="booksList" ItemsSource="{Binding Clients}"
               SelectedItem="{Binding SelectedClient, Mode=TwoWay}" HasUnevenRows="True">

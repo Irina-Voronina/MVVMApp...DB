@@ -17,6 +17,7 @@ namespace MVVMApp.Views
     {
         private readonly object selectedClient;
 
+
         public DBListPage()
         {
             InitializeComponent();

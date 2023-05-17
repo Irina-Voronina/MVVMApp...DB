@@ -15,6 +15,7 @@ namespace MVVMApp.Views
     public partial class DBClientPage : ContentPage
     {
 
+
         public DBClientPage()
         {
             InitializeComponent();

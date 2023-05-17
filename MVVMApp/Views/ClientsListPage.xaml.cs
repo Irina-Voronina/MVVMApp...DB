@@ -14,6 +14,7 @@ namespace MVVMApp.Views
     {
         public ClientsListPage()
         {
+
             InitializeComponent();
             BindingContext = new ClientsListViewModel() { Navigation = this.Navigation };
         }

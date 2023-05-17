@@ -15,6 +15,7 @@ namespace MVVMApp.Views
         public ClientViewModel ViewModel { get; private set; }
         public ClientPage(ClientViewModel vm)
         {
+
             InitializeComponent();
             ViewModel = vm;
             BindingContext = ViewModel;
