@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMApp.Views.ClientPage"
+             BackgroundColor="Beige">
+    <StackLayout>
+        <StackLayout x:Name="clientStack">
+            <Label Text="Сделка" />
+            <Entry Text="{Binding Transaction}" FontSize="Small" />
+            <Label Text="Адрес" />
+            <Entry Text="{Binding Adress}" FontSize="Small" />
+            <Label Text="Цена" />
+            <Entry Text="{Binding Price}" FontSize="Small" />
+            <Label Text="Имя" />
+            <Entry Text="{Binding Name}" FontSize="Small" />
+            <Label Text="Электронная почта" />
+            <Entry Text="{Binding Email}" FontSize="Small" />
+            <Label Text="Телефон" />
+            <Entry Text="{Binding Phone}" FontSize="Small" />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Добавить" Command="{Binding ListViewModel.SaveClientCommand}" CommandParameter="{Binding}" BackgroundColor="YellowGreen" FontAttributes="Bold" FontSize="15"/>
+            <Button Text="Удалить" Command="{Binding ListViewModel.DeleteClientCommand}" CommandParameter="{Binding}" BackgroundColor="Red" FontAttributes="Bold" FontSize="15"/>
+            <Button Text="Назад" Command="{Binding Path=ListViewModel.BackCommand}" BackgroundColor="Yellow" FontAttributes="Bold" FontSize="15"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,35,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="SMS" Command="{Binding SendSmsCommand}" BackgroundColor="DodgerBlue" TextColor="Orange" FontAttributes="Bold"/>
+                <Button Grid.Column="1" Text="Email" Command="{Binding SendEmailCommand}" BackgroundColor="DodgerBlue" TextColor="White" FontAttributes="Bold"/>
+                <Button Grid.Column="2" Text="Call" Command="{Binding CallPhoneCommand}" BackgroundColor="DodgerBlue" TextColor="GreenYellow" FontAttributes="Bold"/>
+        </Grid>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
